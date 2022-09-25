@@ -1,0 +1,192 @@
+.info, .uppe, .nästhögst, .köpnu, .meny, .kundinformation {
+  color:aliceblue;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+.felmodell, .felförnamn, .felefternamn, .felland, .feladress, .felmejl {
+  color: hsl(0, 88%, 36%);
+  font-family: impact;
+} 
+
+.antalköp, .köpräknaren {
+  font-family: impact;
+  font-size: 150%;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+body {
+  background-image: url(applebackground.png);
+  cursor: url(SoyCursor.png), pointer;
+}
+
+audio {
+  cursor: url(SoyClick.png), pointer;
+}
+
+.info {
+  text-align: center;
+  background: black;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.uppe {
+  text-align: center;
+}
+
+.videon {
+  position: relative;
+  justify-content: center;
+  flex: auto;
+  text-align: center;
+}
+
+.videobild {
+  position: relative;
+  top: -365px; 
+  margin-bottom: -300px;
+  pointer-events: none;
+}
+
+.nästhögst {
+  text-align: center;
+  background: black;
+}
+
+.uppreklam {
+  width: 200px;
+  height: 200px;
+  cursor: url(SoyClick.png), pointer;
+}
+
+.nerreklam {
+  width: 400px;
+  height: 400px;
+  cursor: url(SoyClick.png), pointer;
+}
+
+.mellandiv {
+  text-align: center;
+  align-content: center;
+  width: 60%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.averageconsumer {
+  position: fixed;
+  right: 0%;
+  bottom: 0%;
+  width: 20%; 
+}
+.meny {
+  display: flex;
+}
+.meny > div {
+  margin: 10px;
+  padding: 20px;
+  size: auto;
+}
+.meny > p {
+  font-size: 10px;
+}
+
+.menyvänster, .menyhöger {
+  text-align: center;
+}
+
+
+.sidhuvud {
+  background-image: url(iphonebg.jpg);
+  /*background: #424242; Gammal färg */ 
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.sidfotdiv {
+  background-image: url(iphonebg.jpg);
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.vänster, .höger {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.vänster2, .höger2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.corpsoy {
+  text-align: center;
+  justify-content: center;
+}
+
+.snurra {
+  animation: snurra 2s infinite linear;
+}
+
+.menyform {
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  color:white;
+}
+
+.menyform > div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.välj, .land {
+  width: 200px;
+}
+
+.produktbild {
+  cursor: url(SoyClick.png), pointer;
+}
+
+.land {
+  padding: 5px;
+  margin: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  box-sizing: border-box;
+}
+
+.köpknapp {
+  width: 20%;
+  height: 15%;
+  font-size: 30px;
+  cursor: url(SoyClick.png), pointer;
+}
+
+@keyframes snurra {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="KrazIvan">
+    <meta name="description" content="En sida där du kan köpa den nya iPhone 14.">
+    <title>KÖP DEN NYA IPHONE 14! GE OSS PENGAR!</title>
+    <!-- Search Engine -->
+    <meta name="description" content="En sida där du kan köpa den nya iPhone 14.">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="KÖP DEN NYA IPHONE 14! GE OSS PENGAR!">
+    <meta itemprop="description" content="En sida där du kan köpa den nya iPhone 14.">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="KÖP DEN NYA IPHONE 14! GE OSS PENGAR!">
+    <meta name="twitter:description" content="En sida där du kan köpa den nya iPhone 14.">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="KÖP DEN NYA IPHONE 14! GE OSS PENGAR!">
+    <meta name="og:description" content="En sida där du kan köpa den nya iPhone 14.">
+    <meta name="og:url" content="https://krazivan.github.io/">
+    <meta name="og:site_name" content="Hemsidan">
+    <meta name="og:locale" content="sv_SE">
+    <meta name="og:type" content="website">
+    <link rel="icon" type="image/x-icon" href="SoyFavicon.png">
+    <link rel="stylesheet" type="text/css" href="Hemsidan.css">
+</head>
+<body>
+    <header id="sidhuvud" class="sidhuvud">
+        <div class="vänster">
+            <img class="uppreklam" src="http://www.skg.nu/apple300x269.jpg"
+            alt="Bilden som jag behöver ha med, lol.">
+        </div>
+        <div class="mitten">
+            <h1 class="uppe">HALLÅ OCH VÄLKOMMEN!</h1>
+            <p class="uppe">Den nya iPhone 14 är ute! Köp den nu!</p>
+        </div>
+        <div class="höger">
+            <img class="uppreklam" src="Holy_shit_iphone2.gif"
+            alt="Reklam för iPhone.">
+        </div>
+    </header>
+        <audio autoplay loop controls id="gen_z_humor">
+            <source src="gen-z-humor.mp4">
+        </audio>
+<main>
+    <div class = "mellandiv">
+        <div>
+            <h2 class = "nästhögst">
+                <strong>ABSOLUT VÄRT DET!</strong>
+            </h2>
+            <p class = "info"> Kolla på den här videon för att få reda på mer!</p>
+            <div class="videon">
+                <iframe width="420" height="360"
+                    src="https://www.youtube.com/embed/nMkg6A37NNo">
+                </iframe>
+                <div class="videobild">
+                    <img width="420" height="360" src="look.png" alt="Kolla på videon!">
+                </div>
+            </div>
+            <div id="corpsoy">
+                <img src="CorpSoyFullBody.png" class="snurra" width="400" height="400" alt="Kolla! Han snurrar! :D">
+            </div>
+            <p class = "köpnu">
+                <strong>KÖP DEN NYA iPHONEN HÄR NERE OCH SLUTA VARA EN LOSER!</strong>
+            </p>
+        </div>
+        <div class="meny">
+            <div class = "menyvänster">
+                <h2>Apple iPhone 14</h2>
+                <img class="produktbild" src="apple-iphone-14.png" width="100%" alt="Bild på iPhone 14.">
+                <p>
+                    Här är den! Den nya iPhonen! Apple vill att du ska tro att iPhone är mer än en smartphone. Du bör se den som en statussymbol, en högteknologisk gadget och ett fashion statement, allt i ett. Sluta vara en loser och köp den nu! Köp två eller tre till och med!
+                </p>
+                <p id = "pris1"></p>
+            </div>
+
+            <div class = "menyhöger">
+                <h2>Apple iPhone 14 Pro Max</h2>
+                <img class="produktbild" src="apple-iphone-14-pro-max-1.png" width="100%" alt="Bild på iPhone 14 Pro Max.">
+                <p>
+                    Samma skit som den vanliga, fast den här är coolare och dyrare! Annars har jag fan ingen aning vad skillanden är. Större skärm eller nåt? Skit samma! Köp den här om du vill vara bättre än töntarna som bara har en vanlig iPhone, lolololololololololololol! 😂
+                </p>
+                <p id = "pris2"></p>
+            </div>
+
+        </div>
+        <div class="menyform">
+            <h1 class = "kundinformation">Fyll in din information här för att köpa!</h1>
+            <form id = "menyn" method="post">
+                <label for="modell">Vilken modell?</label>
+                <br>
+                <select id="modell" name="modell" class="välj">
+                    <option value=""></option>
+                    <option value="iPhone 14">iPhone 14</option>
+                    <option value="iPhone 14 Pro Max">iPhone 14 Pro Max</option>
+                </select>
+                <p class = "felmodell" id = "felmodell"></p>
+                <br>
+                <label for="förnamn">Förnamn</label>
+                <br>
+                <input type="text" id="förnamn" name="förnamn" placeholder="Ditt förnamn..." oninput="förnamnsfixaren()">
+                <p class = "felförnamn" id = "felförnamn"></p>
+                <br> 
+                <label for="efternamn">Efternamn</label>
+                <br>
+                <input type="text" id="efternamn" name="efternamn" placeholder="Ditt efternamn..." oninput="efternamnsfixaren()">
+                <p class = "felefternamn" id = felefternamn></p>
+                <br>
+                <br>
+                <label for="land">Land</label>
+                <br>
+                <select id="land" name="land" class="land">
+                    <option value=""></option>
+                    <option value="Nordkorea">Nordkorea</option>
+                    <option value="Somalia">Somalia</option>
+                    <option value="Sverige">Sverige</option>
+                    <option value="Irak">Irak</option>
+                    <option value="Syrien">Syrien</option>
+                    <option value="Ryssland">Ryssland</option>
+                    <option value="Tredje riket">Tredje riket</option>
+                    <option value="Liberia">Liberia</option>
+                    <option value="Nauru">Nauru</option>
+                    <option value="Finland">Finland</option>
+                    <option value="Iran">Iran</option>
+                    <option value="Vatikanstaten">Vatikanstaten</option>
+                    <option value="Donetsk">Folkrepubliken Donetsk</option>
+                    <option value="Lugansk">Folkrepubliken Lugansk</option>
+                    <option value="Saudiarabien">Saudiarabien</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="ISIS">Islamiska staten</option>
+                    <option value="Japan">Japan</option>
+                </select>
+                <p class = "felland" id = felland></p>
+                <br>
+                <label for="adress">Adress</label>
+                <br>
+                <input type="text" id="adress" name="adress" placeholder="Din adress...">
+                <p class = "feladress" id = feladress></p>
+                <br>
+                <label for="mejl">Mejl</label>
+                <br>
+                <input type="email" id="mejl" name="mejl" placeholder="Din mejl..." oninput="mejlfixaren()">
+                <p class = "felmejl" id = "felmejl"></p>
+                <br>
+                <br>
+                <br>
+                <input onclick="rättkollaren()" type="button" name ="submit" value="KÖP NU!" class="köpknapp" id="submitbutton">
+                <br>
+                <br>
+                <br>
+                <p class = "antalköp">Antal köp:</p>
+                <p id = "köpräknaren" class ="köpräknaren"></p>
+                <br>
+                <br>
+                <br>
+            </form>
+        </div>
+    </div>
+</main>
+    <!--<div id="corpsoy">
+        <img src="CorpSoyFullBody.png" class="rotate" width="1000" height="1000">
+    </div>-->
+
+
+<div>
+    <img class="averageconsumer" src="averageconsumer.png" alt="Den typiska Apple-kunden.">
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer class="sidfot">
+            <p></p>
+            <p>KrazIvan &copy; 2022</p>
+            <br>
+        <div id="sidfotdiv" class="sidfotdiv">
+            <div class="vänster2">
+                <img class="nerreklam" src="soy1.jpg"
+                alt="Mer reklam för iPhone.">
+            </div>
+            <div class="mitten2">
+                <img class="nerreklam" src="appleworlddomination.jpg"
+                alt="Reklam för Apple.">
+            </div>
+            <div class="höger2">
+                <img class="nerreklam" src="soy2.jpg"
+                alt="Mer reklam för iPhone.">
+            </div>
+        </div>
+</footer>
+<script src="Hemsidan.js"></script>
+</body>
+</html>
