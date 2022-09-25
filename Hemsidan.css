@@ -216,4 +216,7 @@ main {
     justify-content: center;
     flex-wrap: wrap;
   }
+  .köpnu {
+    font-size: small;
+  }
 }
