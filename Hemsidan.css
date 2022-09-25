@@ -212,5 +212,8 @@ main {
     display: flex;
     flex-wrap: wrap;
   }
-
+  .meny {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
