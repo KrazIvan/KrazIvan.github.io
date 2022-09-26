@@ -245,4 +245,10 @@ iframe {
     width: 50%;
     height: 50%;
   }
+  .nästhögst {
+    font-size: medium;
+  }
+  .info {
+    font-size: small;
+  }
 }
