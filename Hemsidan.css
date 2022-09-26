@@ -224,11 +224,12 @@ iframe {
   }
   .köpnu {
     font-size: small;
+    flex-wrap: wrap;
   }
   .köpknapp {
     width: 30%;
     height: 25%;
-    font-size: 15px;
+    font-size: 14px;
   }
   .vänster2, .höger2, .mitten2 {
     display: flex;
@@ -237,7 +238,11 @@ iframe {
   iframe {
     width: 70%;
   }
-  .videobild {
+  .inrevideobild {
     width: 70%;
+  }
+  .snurra {
+    width: 50%;
+    height: 50%;
   }
 }
