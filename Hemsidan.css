@@ -50,6 +50,11 @@ main {
   text-align: center;
 }
 
+iframe {
+  width: 420;
+  height: 360;
+}
+
 .videobild {
   position: relative;
   top: -365px; 
@@ -106,7 +111,6 @@ main {
   text-align: center;
 }
 
-
 .sidhuvud {
   background-image: url(iphonebg.jpg);
   /*background: #424242; Gammal färg */ 
@@ -128,7 +132,7 @@ main {
   width: 100%;
 }
 
-.vänster2, .höger2 {
+.vänster2, .höger2, .mitten2 {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -207,10 +211,12 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 90%;
   }
   .sidfotdiv {
     display: flex;
     flex-wrap: wrap;
+    align-content: space-between;
   }
   .meny {
     justify-content: center;
@@ -218,5 +224,20 @@ main {
   }
   .köpnu {
     font-size: small;
+  }
+  .köpknapp {
+    width: 30%;
+    height: 25%;
+    font-size: 10px;
+  }
+  .vänster2, .höger2, .mitten2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  iframe {
+    width: 70%;
+  }
+  .videobild {
+    width: 70%;
   }
 }
