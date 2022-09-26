@@ -195,64 +195,8 @@ iframe {
   }
 }
 
-@media only screen and (max-width:480px){
-  .sidhuvud {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .vänster, .höger {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  audio {
-    padding: 50px;
-  }
-  .mellandiv {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 90%;
-  }
-  .sidfotdiv {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-  }
-  .meny {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .köpnu {
-    font-size: small;
-    flex-wrap: wrap;
-  }
-  .köpknapp {
-    width: 30%;
-    height: 25%;
-    font-size: 14px;
-  }
-  .vänster2, .höger2, .mitten2 {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  iframe {
-    width: 70%;
-  }
-  .inrevideobild {
-    width: 70%;
-  }
-  .snurra {
-    width: 50%;
-    height: 50%;
-  }
-  .nästhögst {
-    font-size: medium;
-  }
-  .info {
-    font-size: small;
-  }
-}
-@media only screen and (max-width:700px){
+/* @media only screen and (max-width:480px) för iPhone */
+@media only screen and (max-width:800px){
   .sidhuvud {
     display: flex;
     flex-wrap: wrap;
