@@ -228,7 +228,7 @@ iframe {
   .köpknapp {
     width: 30%;
     height: 25%;
-    font-size: 10px;
+    font-size: 15px;
   }
   .vänster2, .höger2, .mitten2 {
     display: flex;
