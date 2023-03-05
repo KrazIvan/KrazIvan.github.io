@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivan Shabalin">
+    <meta name="description" content="KrazIvan's Portfolio.">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Welcome to my portfolio!">
+    <meta name="twitter:image:src" content="./assets/images/profilepic.jpg">
+    <meta name="twitter:description" content="KrazIvan's Portfolio.">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="KrazIvan's Portfolio.">
+    <meta itemprop="description" content="KrazIvan's Portfolio.">
+    <meta itemprop="image" content="./assets/images/profilepic.jpg">
+    <!-- Open Graph tags -->
+    <meta name="og:title" content="Welcome to my portfolio!">
+    <meta name="og:description" content="KrazIvan's Portfolio.">
+    <meta name="og:url" content="https://krazivan.github.io/">
+    <meta name="og:image" content="./assets/images/profilepic.jpg">
+    <meta name="og:site_name" content="KrazIvan-Portfolio">
+    <meta name="og:locale" content="sv_SE">
+    <meta name="og:type" content="website">
+
+    <link rel="icon" type="image/x-icon" href="./assets/images/profilepic.jpg">
+    <link rel="icon" href="./assets/images/profilepic.jpg" />
+		<title>Welcome to my portfolio!</title>
+
+		<link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+
+		<script defer src="./js/script.js"></script>
+	</head>
+	<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN5WJVJ"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+      <div align ="center">
+        <audio autoplay loop controls id="background-music">
+        <source src="./assets/audio/thelema.wav">
+        </audio>
+    </div>
+    <div class="navbar">
+      <a class="nav-title-link" href="./index.html">
+        <span class="nav-title">KrazIvan Portfolio</span>
+        <a class="button" href="mailto:ivan.shabalin@hotmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <div id="main-content">
+      <div id="portfolio-header">
+        <div id="portfolio-header-image-container">
+          <img src="./assets/images/profilepic.jpg" class="portfolio-header-image">
+            <span class="image-caption"></span>
+          </a>
+        </div>
+        <div id="portfolio-header-text-container">
+            <div class="header-text">
+              <span class="main-title">Hello and welcome to my portfolio site!</span>
+              <div class="body-text"></div>
+            </div>
+            <a class="button" id="my-work-link">
+              <span class="button-text">Check out my projects</span> 
+              <!--<image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>  Uncomment for the arrow--> 
+            </a>
+        </div>
+      </div>
+      <div id="about-section">
+        <span class="subheader-text"></span> <!-- For text if I feel like adding it later. -->
+        <div class="about-section-content">
+          <div class="body-text"></div> <!-- Div for text if I feel like adding it later. -->
+          <div class="body-text"></div> <!-- Div for text if I feel like adding it later. -->
+        </div>
+      </div>
+      <div id="my-work-section">
+        <span class="subheader-text">My Projects</span>
+
+        <div class="projects-container">
+          <div class="project-card">
+            <img src="./assets/images/trains.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Rail Network Simulator</div>
+              <div class="body-text project-card-text">An interactive rail network simulator. Check it out!</div>
+              <div class="body-text-project-card-tools">Tools: Python, NetworkX, Matplotlib</div>
+            </div>
+            <a class="button" href="https://github.com/KrazIvan/rail-network-simulator">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/brain.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">"Project: Brain"</div>
+              <div class="body-text project-card-text">Full-fledged bullet hell video game, still in development (alpha). Probably the biggest project I'm working on right now.</div>
+              <div class="body-text-project-card-tools">Tools: Godot Engine, GDScript</div>
+            </div>
+            <a class="button"> <!-- Adding href="LINK" here later -->
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          <div class="project-card">
+            <img src="./assets/images/paleluna.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Pale Luna</div>
+              <div class="body-text project-card-text">An accurate recreation of the "Pale Luna" text-adventure game from the famous internet urban legend/horror story, written in C.</div>
+              <div class="body-text-project-card-tools">Tools: C (programming language)</div>
+            </div>
+            <a class="button" href="https://github.com/KrazIvan/PaleLuna">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/ivanshabalin/">
+        <image src="./assets/icons/linkedin.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" target="_blank" href="https://github.com/KrazIvan">
+        <image src="./assets/icons/github.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" href="mailto:ivan.shabalin@hotmail.com">
+        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+	</body>
+</html>
