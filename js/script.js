@@ -11,15 +11,15 @@ const lightSwitchSounds = [
   "./assets/audio/light_switch_audio2.wav",
   "./assets/audio/light_switch_audio3.wav",
   "./assets/audio/light_switch_audio4.wav",
-  "./assets/audio/light_switch_audio5.wav"
-];
+  "./assets/audio/light_switch_audio5.wav"];
 
-function playRandomSound() {
-  const randomIndex = Math.floor(Math.random() * sounds.length);
-  const audio = new Audio(sounds[randomIndex]);
-  audio.play();
+
+function playRandomSound(soundArray) {
+  var randomIndex = Math.floor(Math.random() * soundArray.length);
+  var lightSwitchSound = new Audio(soundArray[randomIndex]);
+  lightSwitchSound.play();
 }
 
 function darkMode() {
-  playRandomSound();
+  playRandomSound(lightSwitchSounds);
 }
