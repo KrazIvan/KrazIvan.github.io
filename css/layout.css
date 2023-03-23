@@ -74,6 +74,11 @@ body {
   gap: 34px;
 }
 
+.multibuttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
 
 
 
