@@ -74,12 +74,6 @@ body {
   gap: 34px;
 }
 
-.multibuttons {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-
 
 
 /* Project Section */
@@ -88,6 +82,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.multibuttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .projects-container {
