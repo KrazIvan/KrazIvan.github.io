@@ -57,6 +57,11 @@ a.button:hover {
   transform: scale(1.3) rotate(0.05deg);
 }
 
+a.button.dark-mode {
+  color: #b1a2c2;
+}
+
+
 /* Navbar */
 .navbar {
   width: 100%;
@@ -76,6 +81,10 @@ a.button:hover {
 
 .nav-title-link:hover {
   text-decoration: underline;
+}
+
+.nav-title.dark-mode {
+  color: #b1a2c2;
 }
 
 /* For small devices (tablets and large phones, <=800px) */
