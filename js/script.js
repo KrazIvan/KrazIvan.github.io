@@ -2,6 +2,18 @@
 var db = openDatabase('mydb', '1.0', 'Test DB', 2 * 1024 * 1024);
 var now = new Date();
 var nowHour = now.getHours();
+const body = document.body;
+const navTitle = document.querySelector(".nav-title");
+const buttons = document.querySelectorAll("a.button");
+const buttonHoverSound = new Audio("./assets/audio/single-heartbeat.wav");
+let canPlaybuttonHoverSound = true;
+const buttonHoverSoundDelay = 500;
+const lightSwitchSounds = [
+  "./assets/audio/light_switch_audio1.wav",
+  "./assets/audio/light_switch_audio2.wav",
+  "./assets/audio/light_switch_audio3.wav",
+  "./assets/audio/light_switch_audio4.wav",
+  "./assets/audio/light_switch_audio5.wav"];
 
 if (document.getElementById("my-work-link")) {
   document.getElementById("my-work-link").addEventListener("click", () => {
@@ -10,10 +22,6 @@ if (document.getElementById("my-work-link")) {
 }
 
 if (nowHour >= 18 || nowHour < 8) {
-  const body = document.body;
-  const navTitle = document.querySelector(".nav-title");
-  const buttons = document.querySelectorAll(".button");
-  
   body.classList.toggle("dark-mode");
   navTitle.classList.toggle("dark-mode");
   
@@ -22,14 +30,6 @@ if (nowHour >= 18 || nowHour < 8) {
   });
 }
 
-const lightSwitchSounds = [
-  "./assets/audio/light_switch_audio1.wav",
-  "./assets/audio/light_switch_audio2.wav",
-  "./assets/audio/light_switch_audio3.wav",
-  "./assets/audio/light_switch_audio4.wav",
-  "./assets/audio/light_switch_audio5.wav"];
-
-
 function playRandomSound(soundArray) {
   var randomIndex = Math.floor(Math.random() * soundArray.length);
   var lightSwitchSound = new Audio(soundArray[randomIndex]);
@@ -37,10 +37,6 @@ function playRandomSound(soundArray) {
 }
 
 function darkMode() {
-  const body = document.body;
-  const navTitle = document.querySelector(".nav-title");
-  const buttons = document.querySelectorAll(".button");
-  
   body.classList.toggle("dark-mode");
   navTitle.classList.toggle("dark-mode");
   
@@ -51,6 +47,31 @@ function darkMode() {
   playRandomSound(lightSwitchSounds); 
  
 }
+
+// Uncomment to enable button hover sounds (without delay)
+
+//buttons.forEach((button) => {
+//  button.addEventListener("mouseover", () => {
+//    buttonHoverSound.currentTime = 0;
+//    buttonHoverSound.play();
+//  });
+//});
+
+
+// Uncomment to enable button hover sounds (with delay)
+
+//buttons.forEach((button) => {
+//  button.addEventListener("mouseover", () => {
+//    if (canPlaybuttonHoverSound) {
+//      buttonHoverSound.currentTime = 0;
+//      buttonHoverSound.play();
+//      canPlaybuttonHoverSound = false;
+//      setTimeout(() => {
+//        canPlaybuttonHoverSound = true;
+//      }, buttonHoverSoundDelay);
+//    }
+//  });
+//});
 
 //db.transaction(function (tx) { 
 //  tx.executeSql('CREATE TABLE IF NOT EXISTS LOGS (id unique, log)'); 
