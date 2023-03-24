@@ -10,9 +10,15 @@ html {
 }
 
 body {
+  transition: background-color 0.5s ease;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body.dark-mode {
+  background-color: #100214;
+  color: #b1a2c2;
 }
 
 
