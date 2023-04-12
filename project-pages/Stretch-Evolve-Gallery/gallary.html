@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivan Shabalin">
+    <meta name="description" content="Stretch Evolve Gallery.">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Welcome to the Stretch Evolve Gallery!">
+    <meta name="twitter:image:src" content="./assets/images/placeholderpic.jpg">
+    <meta name="twitter:description" content="Stretch Evolve Gallery.">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Stretch Evolve Gallery.">
+    <meta itemprop="description" content="Stretch Evolve Gallery.">
+    <meta itemprop="image" content="./assets/images/placeholderpic.jpg">
+    <!-- Open Graph tags -->
+    <meta name="og:title" content="Welcome to the Stretch Evolve Gallery!">
+    <meta name="og:description" content="Stretch Evolve Gallery.">
+    <meta name="og:url" content="https://github.com/KrazIvan">
+    <meta name="og:image" content="./assets/images/placeholderpic.jpg">
+    <meta name="og:site_name" content="Stretch Evolve Gallery.">
+    <meta name="og:locale" content="sv_SE">
+    <meta name="og:type" content="website">
+
+    <link rel="icon" type="image/x-icon" href="./assets/images/placeholderpic.jpg">
+    <link rel="icon" href="./assets/images/placeholderpic.jpg" /> 
+		<title>Welcome to the Stretch Evolve Gallery!</title>
+
+    <link rel="stylesheet" href="gallery.css">
+
+		<script defer src="gallery.js"></script>
+	</head>
+    <body>
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TN5WJVJ"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <div class="navbar">
+                <a class="nav-title-link" href="./index.html">
+                  <span class="nav-title">Stretch Evolve Gallery</span>
+                  <a class="button" href="mailto:ivan.shabalin@hotmail.com">
+                    <span class="button-text">Contact Me</span>
+                  </a>
+                </a>
+              </div>
+              <div id="main-content">
+                <div id="title-header">
+                    <span class="main-title">Stretch Evolve Gallery</span>
+                </div>
+                <div id="gallery-header">
+                  <div id="gallery-header-contents">
+                      <a class="button" onclick="darkMode()">
+                        <span class="button-text">Toggle Dark Mode</span>
+                      </a>
+                  </div>
+                </div>
+                <div id="title-header">
+                    <span class="filter-title">Gallery Filters</span>
+                </div>
+                <div id="filter-section">
+                    <form id="filter-form">
+                      <input type="text" id="first-name-input" name="first-name" placeholder="First Name">
+                      <input type="text" id="last-name-input" name="last-name" placeholder="Last Name">
+                      <select type="text" id="gender-input" name="gender" placeholder="Gender">
+                        <option value="all">All</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                      </select>
+                      <input type="number" id="age-input" name="age" placeholder="Age">
+                      <input type="text" id="DOB-input" name="DOB" placeholder="Date of Birth" onchange="formatDate(this)" onfocus="(this.type='date')"onblur="(this.type='text')">
+                      <input type="text" id="DOR-input" name="DOR" placeholder="Date registered" onchange="formatDate(this)" onfocus="(this.type='date')"onblur="(this.type='text')">
+                      <input type="text" id="street-input" name="street" placeholder="Street">
+                      <input type="text" id="postal-input" name="postal" placeholder="Postcode">
+                      <input type="text" id="city-input" name="city" placeholder="City">
+                      <input type="text" id="state-input" name="state" placeholder="State">
+                      <input type="text" id="country-input" name="country" placeholder="Country">
+                      <input type="text" id="username-input" name="username" placeholder="Username">
+                      <input type="email" id="email-input" name="email" placeholder="Email">
+                    </form>
+                  </div>
+                  <div class ="multibuttons" id="filter-options">
+                    <a class="button" onclick="applyFilters()">
+                      <span class="button-text">Apply filters</span>
+                    </a>
+                    <a class="button" onclick="removeFilters()">
+                      <span class="button-text">Remove filters</span>
+                    </a>
+                  </div>
+                    <div id="title-header" class="import-data-title-header">
+                      <span class="import-title">Import Data from Present Profiles to your API</span>
+                  </div>
+                  <div id="import-section">
+                      <form id="import-form">
+                      <input type="text" id="api-url-input" name="api-url" placeholder="API URL">
+                      <input type="text" id="api-key-input" name="api-key" placeholder="API-key">
+                      </form>
+                    </div>
+                      <a class="button" onclick="sendData()">
+                        <span class="button-text">Import Data</span>
+                      </a>
+                  <div id="title-header" class="profile-loader-title-header">
+                    <span class="profile-loader-title">Profile Loader</span>
+                </div>
+                <div class="multibuttons" id="paging-options">
+                  <a class="button" onclick="removeAllProfiles()">
+                    <span class="button-text">Remove all profiles</span>
+                </a>
+                  <a class="button" onclick="fetchProfiles(num_profiles=1)">
+                    <span class="button-text">1</span>
+                </a>
+                <a class="button" onclick="fetchProfiles(num_profiles=5)">
+                  <span class="button-text">5</span>
+                </a>
+                <a class="button" onclick="fetchProfiles(num_profiles=10)">
+                  <span class="button-text">10</span>
+                </a>
+                <a class="button" onclick="fetchProfiles(num_profiles=50)">
+                  <span class="button-text">50</span>
+                </a>
+                <a class="button" onclick="fetchProfiles(num_profiles=100)">
+                  <span class="button-text">100</span>
+                </a>
+                <a class="button" onclick="fetchProfiles(num_profiles=250)">
+                  <span class="button-text">250</span>
+                </a>
+                <a class="button" onclick="fetchProfiles(num_profiles=1000)">
+                  <span class="button-text">1000</span>
+                </a>
+                </div>
+                <div id="profiles-section">
+                  <span class="subheader-text">Secret Profiles</span>
+          
+                  <div class="profiles-container">
+                  </div>
+                </div>
+              </div>
+              <div id="bottom" class="bottom">
+                <div id="title-header" class="profile-loader-title-header">
+                  <span class="profile-loader-title">Profile Loader</span>
+              </div>
+              <div class = "multibuttons" id = "paging-options">
+                <a class="button" onclick="removeAllProfiles()">
+                  <span class="button-text">Remove all profiles</span>
+              </a>
+                <a class="button" onclick="fetchProfiles(num_profiles=1)">
+                  <span class="button-text">1</span>
+              </a>
+              <a class="button" onclick="fetchProfiles(num_profiles=5)">
+                <span class="button-text">5</span>
+              </a>
+              <a class="button" onclick="fetchProfiles(num_profiles=10)">
+                <span class="button-text">10</span>
+              </a>
+              <a class="button" onclick="fetchProfiles(num_profiles=50)">
+                <span class="button-text">50</span>
+              </a>
+              <a class="button" onclick="fetchProfiles(num_profiles=100)">
+                <span class="button-text">100</span>
+              </a>
+              <a class="button" onclick="fetchProfiles(num_profiles=250)">
+                <span class="button-text">250</span>
+              </a>
+              <a class="button" onclick="fetchProfiles(num_profiles=1000)">
+                <span class="button-text">1000</span>
+              </a>
+              </div>
+              </div>
+              <div id="footer">
+                <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/ivanshabalin/">
+                  <image src="./assets/icons/linkedin.svg" class="footer-icon"/>
+                </a>
+                <a class="icon-link" target="_blank" href="https://github.com/KrazIvan">
+                  <image src="./assets/icons/github.svg" class="footer-icon"/>
+                </a>
+                <a class="icon-link" href="mailto:ivan.shabalin@hotmail.com">
+                  <image src="./assets/icons/mail.svg" class="footer-icon"/>
+                </a>
+              </div>
+              </body>
+          </html>
