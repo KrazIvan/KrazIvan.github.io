@@ -22,12 +22,7 @@ if (document.getElementById("my-work-link")) {
 }
 
 if (nowHour >= 18 || nowHour < 8) {
-  body.classList.toggle("dark-mode");
-  navTitle.classList.toggle("dark-mode");
-  
-  buttons.forEach(button => {
-    button.classList.toggle("dark-mode");
-  });
+  switchToDarkMode();
 }
 
 function playRandomSound(soundArray) {
@@ -36,14 +31,17 @@ function playRandomSound(soundArray) {
   lightSwitchSound.play();
 }
 
-function darkMode() {
+function switchToDarkMode() {
   body.classList.toggle("dark-mode");
   navTitle.classList.toggle("dark-mode");
   
   buttons.forEach(button => {
     button.classList.toggle("dark-mode");
   });
-  
+}
+
+function darkMode() {
+  switchToDarkMode();
   playRandomSound(lightSwitchSounds); 
  
 }
