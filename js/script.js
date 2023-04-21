@@ -22,7 +22,7 @@ if (document.getElementById("my-work-link")) {
 }
 
 if (nowHour >= 18 || nowHour < 8) {
-  switchToDarkMode();
+  toggleDarkMode();
 }
 
 function playRandomSound(soundArray) {
@@ -31,7 +31,7 @@ function playRandomSound(soundArray) {
   lightSwitchSound.play();
 }
 
-function switchToDarkMode() {
+function toggleDarkMode() {
   body.classList.toggle("dark-mode");
   navTitle.classList.toggle("dark-mode");
   
@@ -41,7 +41,7 @@ function switchToDarkMode() {
 }
 
 function darkMode() {
-  switchToDarkMode();
+  toggleDarkMode();
   playRandomSound(lightSwitchSounds); 
  
 }
