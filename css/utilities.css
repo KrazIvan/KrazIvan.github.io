@@ -96,6 +96,12 @@ a.button.dark-mode {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+}
+
 /* Project Images */
 .project-image {
   transform: scale(1);
