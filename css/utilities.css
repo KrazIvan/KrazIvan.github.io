@@ -139,6 +139,10 @@ a.icon-link:hover {
   animation: spin 2s infinite linear;
 }
 
+.feather-mail.dark-mode {
+  stroke: #745dad;
+}
+
 /* Links */
 a.no-underline {
   text-decoration: none;
