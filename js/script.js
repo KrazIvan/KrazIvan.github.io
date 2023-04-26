@@ -38,6 +38,9 @@ function toggleDarkMode() {
   buttons.forEach(button => {
     button.classList.toggle("dark-mode");
   });
+  
+  const mailIcon = document.querySelector(".feather-mail");
+  mailIcon.classList.toggle("dark-mode");
 }
 
 function darkMode() {
