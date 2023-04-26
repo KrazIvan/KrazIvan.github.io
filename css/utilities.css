@@ -143,6 +143,10 @@ a.icon-link:hover {
   stroke: #745dad;
 }
 
+.github-icon-path.dark-mode {
+  fill: #4412c2;
+}
+
 /* Links */
 a.no-underline {
   text-decoration: none;
