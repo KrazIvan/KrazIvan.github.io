@@ -41,6 +41,9 @@ function toggleDarkMode() {
   
   const mailIcon = document.querySelector(".feather-mail");
   mailIcon.classList.toggle("dark-mode");
+
+  const githubIcon = document.querySelector(".github-icon-path");
+  githubIcon.classList.toggle("dark-mode");
 }
 
 function darkMode() {
