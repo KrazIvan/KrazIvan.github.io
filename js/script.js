@@ -1,5 +1,5 @@
 //document.getElementById("background-music").volume = 0.5;
-var db = openDatabase('mydb', '1.0', 'Test DB', 2 * 1024 * 1024);
+//var db = openDatabase('mydb', '1.0', 'Test DB', 2 * 1024 * 1024);
 var now = new Date();
 var nowHour = now.getHours();
 const body = document.body;
@@ -33,17 +33,24 @@ function playRandomSound(soundArray) {
 
 function toggleDarkMode() {
   body.classList.toggle("dark-mode");
-  navTitle.classList.toggle("dark-mode");
-  
+
+  if (navTitle) {
+    navTitle.classList.toggle("dark-mode");
+  }
+
   buttons.forEach(button => {
     button.classList.toggle("dark-mode");
   });
-  
+
   const mailIcon = document.querySelector(".feather-mail");
-  mailIcon.classList.toggle("dark-mode");
+  if (mailIcon) {
+    mailIcon.classList.toggle("dark-mode");
+  }
 
   const githubIcon = document.querySelector(".github-icon-path");
-  githubIcon.classList.toggle("dark-mode");
+  if (githubIcon) {
+    githubIcon.classList.toggle("dark-mode");
+  }
 }
 
 function darkMode() {
