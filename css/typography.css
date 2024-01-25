@@ -62,3 +62,13 @@ body {
   color: #721c24;
   text-decoration: underline;
 }
+
+.private-message.dark-mode {
+  background-color: #312542;
+  border: 1px solid #371f57;
+  color: #9557be;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}

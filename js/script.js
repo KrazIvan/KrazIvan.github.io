@@ -42,6 +42,11 @@ function toggleDarkMode() {
     button.classList.toggle("dark-mode");
   });
 
+  const privateMessages = document.querySelectorAll(".private-message");
+  privateMessages.forEach(privateMessage => {
+    privateMessage.classList.toggle("dark-mode");
+  });
+
   const mailIcon = document.querySelector(".feather-mail");
   if (mailIcon) {
     mailIcon.classList.toggle("dark-mode");
